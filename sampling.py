@@ -16,7 +16,7 @@ def reservoir_sampling(data, size, iters=1):
                 tmp.append(item)
             else:
                 r = np.random.randint(0, n)
-                if r < size: 
+                if r < size:
                     tmp[r] = item
         result.append(tmp)
     return result
