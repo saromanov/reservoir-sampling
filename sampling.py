@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def reservoir_sampling(data, size, iters=1):
     '''implementation of algorithm
     for more details see
@@ -15,6 +16,7 @@ def reservoir_sampling(data, size, iters=1):
                 tmp.append(item)
             else:
                 r = np.random.randint(0, n)
-                if r < size: tmp[r] = item
+                if r < size: 
+                    tmp[r] = item
         result.append(tmp)
     return result
