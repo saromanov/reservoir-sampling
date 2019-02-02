@@ -1,6 +1,10 @@
 import numpy as np
 
 def reservoir_sampling(data, size, iters=1):
+    '''implementation of algorithm
+    for more details see
+    https://en.wikipedia.org/wiki/Reservoir_sampling
+    '''
     result = []
     n = 0
     for it in range(iters):
