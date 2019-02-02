@@ -1,11 +1,12 @@
 import numpy as np
 
-def reservoir_sampling(size, count=100):
+def reservoir_sampling(data, size):
     result = []
-    for i in range(1, count):
-        r = np.random.randint(0, i)
+    n = 0
+    for item in data:
+        n += 1
         if len(result) < size:
-            result.append(r)
-            continue
-        elif r < size:
-            result[r] = result[i]
+            result.append(item)
+        else:
+            r = np.random.randint(0, n)
+            result[r] = item
