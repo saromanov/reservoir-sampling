@@ -24,7 +24,7 @@ if __name__ == "__main__":
             TODO
            """),
         packages=[
-            "jams",
+            "reservoir",
         ],
         classifiers=[
             "Development Status :: 5 - Production/Stable",
